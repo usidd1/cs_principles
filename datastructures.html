@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset = "utf-8">
+    <title>Data Structures</title>
+    <script>
+        // create an objet that is a pet, car or favorite athlete
+        let stephenCurry = {
+            Shooting: "godly",
+            Team: "Warriors",
+            Age: 33,
+        }
+        // welcome to constructors...
+        function dog(name, age){
+            this.name = name;
+            this.age = age,
+            this.meow = function(bark){
+                console.log(bark);
+            }
+        }
+        
+        // this is a class 
+        class Dog{
+            constructor(name,age){
+                this.name = name;
+                this.age = age;
+                this.favoriteToys = ["Bone", "Stick", "Ball"];
+                this.isAlive = true;
+            }
+                bark(){
+                console.log("WOOOOOOF");
+            }
+            run(){
+            }
+        }  
+        
+        // create instance of dog constructor function
+
+        console.log(stephenCurry.Age);
+        console.log(stephenCurry.Shooting);
+
+        function input(){
+            return document.getElementById("inputId").value;
+        }
+
+        function output(){
+            document.getElementById("display1").innerHTML = input();
+        }
+    </script>
+</head>
+</html>
